@@ -104,10 +104,10 @@ body {
 .btn-login {
     width: 100%;
     padding: 13px;
-    background-color: #e94560;
+    background-color: #ff0932;
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 9px;
     font-size: 15px;
     font-weight: 600;
     cursor: pointer;
