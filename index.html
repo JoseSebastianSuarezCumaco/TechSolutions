@@ -4,26 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechSolutions - Eventos Académicos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <nav>
-        <h1>TechSolutions S.A.S</h1>
-        <ul>
+    <nav class="navbar">
+        <div class="logo">TechSolutions</div>
+        <ul class="nav-links">
             <li><a href="pages/login.html">Login</a></li>
             <li><a href="pages/dashboard.html">Dashboard</a></li>
             <li><a href="pages/eventos.html">Eventos</a></li>
         </ul>
     </nav>
 
-    <main>
-        <h2>Plataforma de Gestión de Eventos Académicos</h2>
-        <p>Bienvenido al sistema de eventos de TechSolutions</p>
-        <a href="pages/login.html">Ingresar al sistema</a>
-    </main>
+    <section class="hero">
+        <h1>Gestión de Eventos Académicos</h1>
+        <p>Plataforma oficial de TechSolutions S.A.S</p>
+        <a href="pages/login.html" class="btn-login">Ingresar al sistema</a>
+    </section>
 
-    <footer>
-        <p>© 2025 TechSolutions S.A.S</p>
+    <section class="cards-index">
+        <div class="card-index">
+            <i class="ti ti-calendar-event"></i>
+            <h3>Eventos Activos</h3>
+            <p>Consulta los eventos académicos disponibles</p>
+            <a href="pages/eventos.html">Ver eventos</a>
+        </div>
+        <div class="card-index">
+            <i class="ti ti-layout-dashboard"></i>
+            <h3>Mi Panel</h3>
+            <p>Accede a tu dashboard personal</p>
+            <a href="pages/dashboard.html">Ver dashboard</a>
+        </div>
+        <div class="card-index">
+            <i class="ti ti-user-plus"></i>
+            <h3>Registrarse</h3>
+            <p>Crea tu cuenta en la plataforma</p>
+            <a href="pages/login.html">Crear cuenta</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 TechSolutions S.A.S - Todos los derechos reservados</p>
     </footer>
 </body>
 </html>
