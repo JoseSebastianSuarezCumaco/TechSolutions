@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1a1a2e;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #e94560;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #e94560;
+}
+
+/* Login */
+.login-wrapper {
+    min-height: calc(100vh - 120px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.login-box {
+    background: white;
+    padding: 45px 40px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-header h2 {
+    font-size: 26px;
+    color: #1a1a2e;
+    margin-bottom: 8px;
+}
+
+.login-header p {
+    color: #888;
+    font-size: 14px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #444;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1.5px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #e94560;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 13px;
+    background-color: #e94560;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.btn-login:hover {
+    background-color: #c73652;
+}
+
+.form-footer {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 13px;
+    color: #777;
+}
+
+.form-footer a {
+    color: #e94560;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#mensaje {
+    margin-bottom: 10px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.msg-error {
+    color: #e94560;
+    background: #fdecea;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+.msg-success {
+    color: #1a7a4a;
+    background: #d4edda;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+/* Footer */
+.footer {
+    background-color: #1a1a2e;
+    color: #888;
+    text-align: center;
+    padding: 18px;
+    font-size: 13px;
+}
