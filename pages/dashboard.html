@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechSolutions S.A.S. — Gestión de Eventos Académicos</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <span class="topbar-title">TechSolutions S.A.S.</span>
+      <span class="topbar-sep">/</span>
+      <span class="topbar-sub">Gestión de Eventos Académicos</span>
+    </div>
+    <div class="topbar-right">
+      <div class="notif-btn">
+        <i class="ti ti-bell" aria-hidden="true"></i>
+        <span class="notif-dot"></span>
+      </div>
+      <div class="branch-badge">
+        <i class="ti ti-git-branch" aria-hidden="true"></i>
+        feature/dashboard-ui
+      </div>
+      <div class="avatar">AP</div>
+    </div>
+  </header>
+
+  <div class="layout">
+
+    <!-- SIDEBAR -->
+    <nav class="sidebar">
+      <p class="sidebar-label">principal</p>
+      <div class="nav-item active">
+        <i class="ti ti-layout-dashboard" aria-hidden="true"></i> Dashboard
+      </div>
+      <div class="nav-item">
+        <i class="ti ti-calendar-event" aria-hidden="true"></i> Eventos
+        <span class="nav-badge">3</span>
+      </div>
+      <div class="nav-item">
+        <i class="ti ti-users" aria-hidden="true"></i> Participantes
+      </div>
+      <div class="nav-item">
+        <i class="ti ti-file-text" aria-hidden="true"></i> Reportes
+      </div>
+
+      <div class="sidebar-divider"></div>
+      <p class="sidebar-label">gestión</p>
+
+      <div class="nav-item">
+        <i class="ti ti-ticket" aria-hidden="true"></i> Inscripciones
+        <span class="nav-badge">7</span>
+      </div>
+      <div class="nav-item">
+        <i class="ti ti-certificate" aria-hidden="true"></i> Certificados
+      </div>
+      <div class="nav-item disabled">
+        <i class="ti ti-settings" aria-hidden="true"></i> Configuración
+      </div>
+
+      <div class="sidebar-divider"></div>
+
+      <div class="sidebar-notice">
+        <i class="ti ti-git-merge" style="font-size:12px;" aria-hidden="true"></i>
+        rama: feature/dashboard-ui<br>
+        2 módulos pendientes de merge
+      </div>
+
+      <div class="sidebar-user">
+        <div class="av-sm av-purple">AP</div>
+        <div class="sidebar-user-info">
+          <p>Ana Pérez</p>
+          <span>Aprendiz · SENA</span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- MAIN -->
+    <main class="main">
+
+      <!-- Page header -->
+      <div class="page-header">
+        <div>
+          <p class="page-title">Panel principal</p>
+          <p class="page-sub">Semestre 2025-B · Sede Bogotá</p>
+        </div>
+        <div class="header-actions">
+          <button class="btn">
+            <i class="ti ti-download" aria-hidden="true"></i> Exportar
+          </button>
+          <button class="btn btn-primary">
+            <i class="ti ti-plus" aria-hidden="true"></i> Nuevo evento
+          </button>
+        </div>
+      </div>
+
+      <!-- ALERT BANNER -->
+      <div class="alert-banner">
+        <i class="ti ti-alert-triangle" aria-hidden="true"></i>
+        Conflicto detectado en rama <strong>feature/attendance-api</strong>
+        <span>— requiere resolución antes del merge.</span>
+      </div>
+
+      <!-- METRIC CARDS -->
+      <div class="cards-row">
+        <div class="metric-card c-purple">
+          <div class="metric-icon purple"><i class="ti ti-calendar-event" aria-hidden="true"></i></div>
+          <p class="metric-label">Eventos totales</p>
+          <p class="metric-value">14</p>
+          <p class="metric-sub metric-up">↑ +3 este mes</p>
+        </div>
+        <div class="metric-card c-green">
+          <div class="metric-icon green"><i class="ti ti-users" aria-hidden="true"></i></div>
+          <p class="metric-label">Participantes</p>
+          <p class="metric-value">342</p>
+          <p class="metric-sub metric-up">↑ 12% vs mes anterior</p>
+        </div>
+        <div class="metric-card pending">
+          <div class="metric-icon amber"><i class="ti ti-chart-bar" aria-hidden="true"></i></div>
+          <p class="metric-label">Asistencia</p>
+          <p class="metric-value muted">— pendiente</p>
+          <p class="metric-sub">módulo en desarrollo</p>
+        </div>
+        <div class="metric-card pending">
+          <div class="metric-icon blue"><i class="ti ti-certificate" aria-hidden="true"></i></div>
+          <p class="metric-label">Certificados</p>
+          <p class="metric-value muted">— pendiente</p>
+          <p class="metric-sub">módulo en desarrollo</p>
+        </div>
+      </div>
+
+      <!-- ROW 2: eventos + actividad -->
+      <div class="grid2">
+
+        <!-- Próximos eventos -->
+        <div class="wip-block">
+          <div class="wip-tag progress">EN PROGRESO</div>
+          <p class="section-title">Próximos eventos <span>· 3 confirmados</span></p>
+
+          <div class="event-row">
+            <div class="event-dot" style="background:#6C63FF;"></div>
+            <div class="event-info">
+              <p class="event-name">Congreso de Ingeniería de Software</p>
+              <p class="event-date">15 Jun · Auditorio A · 120 cupos</p>
+            </div>
+            <span class="badge badge-ok">Confirmado</span>
+          </div>
+          <div class="event-row">
+            <div class="event-dot" style="background:#22c98a;"></div>
+            <div class="event-info">
+              <p class="event-name">Hackathon SENA 2025</p>
+              <p class="event-date">22 Jun · Sala de cómputo · 40 cupos</p>
+            </div>
+            <span class="badge badge-warn">En revisión</span>
+          </div>
+          <div class="event-row">
+            <div class="event-dot" style="background:#4a9eff;"></div>
+            <div class="event-info">
+              <p class="event-name">Semana de Innovación</p>
+              <p class="event-date">3 Jul · Campus · 200 cupos</p>
+            </div>
+            <span class="badge badge-info">Borrador</span>
+          </div>
+          <div class="event-row">
+            <div class="event-dot" style="background:#f5a623;"></div>
+            <div class="event-info">
+              <p class="event-name">Feria de Proyectos 2025</p>
+              <p class="event-date">18 Jul · Gimnasio · 80 cupos</p>
+            </div>
+            <span class="badge badge-warn">En revisión</span>
+          </div>
+
+          <div style="margin-top:14px;">
+            <div style="display:flex; justify-content:space-between; font-size:12px; color:var(--text-tertiary); margin-bottom:5px;">
+              <span>Cupos ocupados (Congreso)</span>
+              <span>78 / 120</span>
+            </div>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" style="width:65%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Actividad reciente -->
+        <div class="wip-block">
+          <div class="wip-tag done">NUEVO</div>
+          <p class="section-title">Actividad reciente</p>
+
+          <div class="activity-item">
+            <div class="activity-dot-wrap">
+              <div class="activity-dot" style="background:#6C63FF;"></div>
+              <div class="activity-line"></div>
+            </div>
+            <div>
+              <p class="activity-text"><strong>Ana Pérez</strong> hizo push en <strong>feature/dashboard-ui</strong></p>
+              <p class="activity-time">Hace 2h · a3f91bc</p>
+            </div>
+          </div>
+          <div class="activity-item">
+            <div class="activity-dot-wrap">
+              <div class="activity-dot" style="background:#ff5c7c;"></div>
+              <div class="activity-line"></div>
+            </div>
+            <div>
+              <p class="activity-text"><strong>Carlos Mora</strong> reportó conflicto en <strong>feature/attendance-api</strong></p>
+              <p class="activity-time">Hace 5h · merge conflict</p>
+            </div>
+          </div>
+          <div class="activity-item">
+            <div class="activity-dot-wrap">
+              <div class="activity-dot" style="background:#22c98a;"></div>
+              <div class="activity-line"></div>
+            </div>
+            <div>
+              <p class="activity-text"><strong>Laura Gil</strong> abrió pull request en <strong>feature/auth-module</strong></p>
+              <p class="activity-time">Ayer · PR #4</p>
+            </div>
+          </div>
+          <div class="activity-item">
+            <div class="activity-dot-wrap">
+              <div class="activity-dot" style="background:#4a9eff;"></div>
+              <div class="activity-line"></div>
+            </div>
+            <div>
+              <p class="activity-text"><strong>Diego Ruiz</strong> creó la rama <strong>feature/reports-pdf</strong></p>
+              <p class="activity-time">Ayer · rama nueva</p>
+            </div>
+          </div>
+          <div class="activity-item">
+            <div class="activity-dot-wrap">
+              <div class="activity-dot" style="background:#f5a623;"></div>
+              <div class="activity-line"></div>
+            </div>
+            <div>
+              <p class="activity-text">Merge de <strong>feature/sidebar</strong> a <strong>main</strong> completado</p>
+              <p class="activity-time">Hace 2 días · merge ok</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Tabla equipo -->
+      <div class="wip-block" style="margin-bottom:16px;">
+        <div class="wip-tag progress">EN PROGRESO</div>
+        <p class="section-title">Equipo de desarrollo · ramas activas</p>
+
+        <div class="table-head">
+          <span>Aprendiz</span>
+          <span>Rama activa</span>
+          <span>Último commit</span>
+          <span>Estado</span>
+        </div>
+        <div class="table-row">
+          <div class="cell-user"><span class="av-sm av-purple">AP</span> Ana Pérez</div>
+          <span class="av-mono">feature/dashboard-ui</span>
+          <span style="color:var(--text-secondary); font-size:12px;">Hace 2h</span>
+          <span class="badge badge-ok">Activa</span>
+        </div>
+        <div class="table-row">
+          <div class="cell-user"><span class="av-sm av-teal">CM</span> Carlos Mora</div>
+          <span class="av-mono">feature/attendance-api</span>
+          <span style="color:var(--text-secondary); font-size:12px;">Hace 5h</span>
+          <span class="badge badge-err">Conflicto</span>
+        </div>
+        <div class="table-row">
+          <div class="cell-user"><span class="av-sm av-coral">LG</span> Laura Gil</div>
+          <span class="av-mono">feature/auth-module</span>
+          <span style="color:var(--text-secondary); font-size:12px;">Ayer</span>
+          <span class="badge badge-info">Review</span>
+        </div>
+        <div class="table-row">
+          <div class="cell-user"><span class="av-sm av-blue">DR</span> Diego Ruiz</div>
+          <span class="av-mono">feature/reports-pdf</span>
+          <span style="color:var(--text-secondary); font-size:12px;">Ayer</span>
+          <span class="badge badge-warn">En progreso</span>
+        </div>
+      </div>
+
+      <!-- Grid stats + inscripciones -->
+      <div class="grid2">
+
+        <!-- Stats rápidas -->
+        <div class="wip-block dashed">
+          <div class="wip-tag todo">TODO</div>
+          <p class="section-title">Resumen del proyecto</p>
+
+          <div class="stat-row">
+            <span class="stat-label"><i class="ti ti-git-branch" style="font-size:15px;" aria-hidden="true"></i> Ramas activas</span>
+            <span class="stat-value">4</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-label"><i class="ti ti-git-pull-request" style="font-size:15px;" aria-hidden="true"></i> Pull requests abiertos</span>
+            <span class="stat-value">2</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-label"><i class="ti ti-alert-circle" style="font-size:15px;" aria-hidden="true"></i> Conflictos pendientes</span>
+            <span class="stat-value" style="color:var(--red);">1</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-label"><i class="ti ti-check" style="font-size:15px;" aria-hidden="true"></i> Commits esta semana</span>
+            <span class="stat-value" style="color:var(--green);">12</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-label"><i class="ti ti-package" style="font-size:15px;" aria-hidden="true"></i> Módulos completados</span>
+            <span class="stat-value">2 / 6</span>
+          </div>
+
+          <div style="margin-top:14px;">
+            <div style="display:flex; justify-content:space-between; font-size:12px; color:var(--text-tertiary); margin-bottom:5px;">
+              <span>Avance general del proyecto</span>
+              <span>33%</span>
+            </div>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" style="width:33%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Inscripciones TODO -->
+        <div class="wip-block dashed">
+          <div class="wip-tag todo">TODO</div>
+          <p class="section-title">Módulo de inscripciones</p>
+          <div class="todo-comment">
+            // TODO: formulario de inscripción + validaciones<br>
+            // TODO: envío de correo de confirmación<br>
+            // depends on: feature/auth-module (merge pendiente)<br>
+            // asignado: @laura.dev
+          </div>
+          <div class="skeleton wide"></div>
+          <div class="skeleton mid"></div>
+          <div class="skeleton tall"></div>
+          <div class="skeleton short"></div>
+        </div>
+
+      </div>
+
+      <!-- Console -->
+      <div class="wip-block dashed">
+        <div class="wip-tag todo">TODO</div>
+        <p class="section-title">Módulo de estadísticas de asistencia</p>
+        <div class="todo-comment">
+          // TODO: conectar con API de asistencia<br>
+          // branch: feature/attendance-api — resolver conflicto primero<br>
+          // asignado: @carlos.dev
+        </div>
+        <div class="skeleton wide"></div>
+        <div class="skeleton mid"></div>
+
+        <div class="console-block">
+          <div><span class="c-gray">$</span> <span class="c-white">git status</span></div>
+          <div><span class="c-yellow">modified:  src/views/Inscripciones.vue</span></div>
+          <div><span class="c-yellow">modified:  src/api/eventos.js</span></div>
+          <div><span class="c-red">conflict:  src/api/asistencia.js</span></div>
+          <div><span class="c-gray">untracked: src/components/FormInscripcion.vue</span></div>
+          <div style="margin-top:6px;"><span class="c-gray">$</span> <span class="c-white">git log --oneline -4</span></div>
+          <div><span class="c-purple">a3f91bc</span> <span class="c-white">feat: sidebar de navegación + actividad reciente</span></div>
+          <div><span class="c-purple">7d2e410</span> <span class="c-white">feat: métricas principales del dashboard</span></div>
+          <div><span class="c-purple">4f10c3a</span> <span class="c-white">feat: tabla de equipo y ramas activas</span></div>
+          <div><span class="c-purple">1c89fa2</span> <span class="c-white">init: estructura base del proyecto</span></div>
+          <div style="margin-top:6px;"><span class="c-gray">$</span> <span class="c-blue">git branch -a</span></div>
+          <div><span class="c-green">* feature/dashboard-ui</span></div>
+          <div><span class="c-gray">  feature/attendance-api</span></div>
+          <div><span class="c-gray">  feature/auth-module</span></div>
+          <div><span class="c-gray">  feature/reports-pdf</span></div>
+          <div><span class="c-gray">  main</span></div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+</body>
+</html>
