@@ -19,7 +19,7 @@ if (loginForm) {
             mensaje.innerHTML = '<p class="msg-error">La contraseña no puede estar vacía</p>';
             return;
         }
-        if (password.length < 6) {
+        if (password.length < 8) {
             mensaje.innerHTML = '<p class="msg-error">La contraseña debe tener mínimo 6 caracteres</p>';
             return;
         }
